@@ -1,0 +1,15 @@
+body{
+    background-color: yellow;
+    text-align: center;
+}
+.night{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+button{
+    width: 150px;
+    height: 80px;
+    font-size: 30px;
+    border-radius: 10px;
+}

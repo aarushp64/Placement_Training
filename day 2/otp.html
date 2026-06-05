@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightslategrey;
+            text-align: center;
+        }
+        h1{
+            font-size: 30px;
+        }
+        button{
+            font-size: 20px;
+            cursor: pointer;
+        }
+        Span{
+            color:blue;
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Your six digit OTP is: <span></span>. Use it carefully.</h1>
+    <button>Generate OTP</button>
+    <script>
+        let b1=document.querySelector("button")
+        b1.addEventListener("click", ()=>{
+            let otp=""
+            for(let i=0; i<6; i++){
+                otp+=Math.floor(Math.random()*10)
+            }
+            document.querySelector("span").textContent=otp
+        })
+    </script>
+</body>
+</html>
