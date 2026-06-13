@@ -32,8 +32,8 @@ def rotate(head,k):
     tail.next=head
     for i in range(length-k):
         tail=tail.next
-        new_head=tail.next
-        tail.next=None
+    new_head=tail.next
+    tail.next=None
     return new_head
 k=2
 rotated_head=rotate(node1,k)
